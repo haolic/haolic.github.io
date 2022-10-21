@@ -6137,7 +6137,7 @@ class Te extends B.exports.Component {
                 this.setState({
                   showSearchBarChecked: !!e.showSearchBarChecked,
                   defaultPlayChecked: !1 !== e.defaultPlayChecked,
-                  isVerticalVerses: "vertical" === e.versesLayout,
+                  isVerticalVerses: "vertical", // 竖向诗词
                   isPlaying: !1 !== e.defaultPlayChecked,
                   verses: e.verses || F,
                   selected: e.selected || "waves",
