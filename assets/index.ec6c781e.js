@@ -150,6 +150,7 @@ var e=Object.defineProperty,i=Object.getOwnPropertySymbols,a=Object.prototype.ha
           animation: ${Ke} 5s ease;
         `};
 `,Ye=({colorName:e,colorStayChecked:i,fontName:a,isDarkMode:n})=>S.createElement(Ge,{fontName:a,colorStayChecked:i,isDarkMode:n},e);Ye.propTypes={colorName:o.string,colorStayChecked:o.bool,fontName:o.string,isDarkMode:o.bool};const fe="jinrishici-token",ve=(e,i)=>ze((function(i){window.localStorage.setItem(fe,i.token),e(i)}),i,"https://v2.jinrishici.com/one.json?client=npm-sdk/1.0"),we=(e,i,a)=>ze(e,i,"https://v2.jinrishici.com/one.json?client=npm-sdk/1.0&X-User-Token="+encodeURIComponent(a)),ze=(e,i,a)=>{const n=new XMLHttpRequest;n.open("get",a),n.withCredentials=!0,n.send(),n.onreadystatechange=function(){if(4===n.readyState){let a=n.responseText?JSON.parse(n.responseText):{errMessage:"无法获取诗词，请检查网络连接，正为您显示本地诗词..."};"success"===a.status?e(a):i?i(a):console.error("今日诗词API加载失败，错误原因："+a.errMessage)}}};const je=E`
+
   @font-face {
     font-family: 'JXZhuoKai';
     src: url(${"/assets/JXZhuoKai.d9fad288.woff"}) format('woff');
